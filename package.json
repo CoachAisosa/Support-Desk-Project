@@ -1,0 +1,22 @@
+{
+  "name": "support-desk-app",
+  "version": "1.0.0",
+  "description": "Support desk app for testing ",
+  "main": "Server.js",
+  "scripts": {
+    "start": "node backend/Server.js",
+    "server": "nodemon backend/Server.js"
+  },
+  "author": "Godstime Aisosa",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "colors": "^1.4.0",
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "mongoose": "^8.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
