@@ -5,15 +5,20 @@
   "main": "Server.js",
   "scripts": {
     "start": "node backend/Server.js",
-    "server": "nodemon backend/Server.js"
+    "server": "nodemon backend/Server.js",
+    "client": "npm run dev --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "author": "Godstime Aisosa",
   "license": "MIT",
   "dependencies": {
     "bcryptjs": "^3.0.2",
     "colors": "^1.4.0",
+    "concurrently": "^10.0.4",
     "dotenv": "^17.2.2",
     "express": "^5.1.0",
+    "express-async-handler": "^1.2.0",
+    "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.18.2"
   },
   "devDependencies": {
