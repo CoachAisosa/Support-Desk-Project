@@ -13,12 +13,13 @@ import Modal from 'react-modal'
 
 const customStyle = {
     content: {
-        width: '600px',
+        width: 'calc(100% - 30px)',
+        maxWidth: '600px',
         top: '50%',
         left: '50%',
         right: 'auto',
         bottom: 'auto',
-        marginRight: '-50',
+        marginRight: '-50%',
         transform: 'translate(-50%, -50%)',
         position: 'relative',
     },
@@ -113,7 +114,7 @@ const onNoteSubmit = (e) => {
         <button className="btn-close" onClick={closeModal}>X</button>
 
         <form onSubmit={onNoteSubmit}>
-            <div className="form-grou0p">
+            <div className="form-group">
                 <textarea 
                 name="NoteText" 
                 id="NoteText" 
@@ -140,7 +141,7 @@ const onNoteSubmit = (e) => {
 
 
       {ticket.status !== 'closed' && (
-          <buton onClick={onTicketClose} className="btn btn-block btn-danger">Close Ticket</buton>
+          <button onClick={onTicketClose} className="btn btn-block btn-danger">Close Ticket</button>
       )}
       
   </div>

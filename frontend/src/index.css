@@ -388,20 +388,151 @@ footer {
 }
 
 @media (max-width: 600px) {
+
+  .container {
+    padding: 0 12px;
+  }
+
+  .header {
+    padding: 15px 0;
+    margin-bottom: 30px;
+  }
+
+  .header ul li {
+    margin-left: 10px;
+  }
+
+  .heading {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    padding: 0 10px;
+  }
+
+  .heading p {
+    font-size: 1rem;
+  }
+
   .boxes {
     grid-template-columns: 1fr;
+    gap: 15px;
   }
 
   .form {
-    width: 90%;
+    width: 100%;
+  }
+
+  /* Tickets page */
+  .ticket-headings {
+    display: none;
+  }
+
+  .ticket {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    text-align: left;
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+
+  .ticket > div {
+    width: 100%;
+  }
+
+  .ticket .btn {
+    width: 100%;
+  }
+
+  .status {
+    width: fit-content;
+    min-width: 90px;
+    padding: 3px 10px;
+    justify-self: start;
+    font-size: 14px;
+  }
+
+  /* Single ticket page */
+  .ticket-page {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .ticket-page h2 {
+    display: block;
+    font-size: 1.2rem;
+    word-break: break-word;
+  }
+
+  .ticket-page h2 .status {
+    margin-top: 10px;
+  }
+
+  .ticket-page h3 {
+    font-size: 1rem;
+    word-break: break-word;
+  }
+
+  .ticket-desc {
+    font-size: 15px;
+    padding: 12px;
+    overflow-wrap: anywhere;
+  }
+
+  .ticket-desc p {
+    overflow-wrap: anywhere;
+  }
+
+  /* Notes */
+  .note {
+    padding: 15px;
+    padding-bottom: 45px;
+    overflow: hidden;
+  }
+
+  .note h4 {
+    padding-right: 10px;
+    margin-bottom: 10px;
+  }
+
+  .note p {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  .note-date {
+    position: static;
+    margin-top: 15px;
+    font-size: 12px;
+  }
+
+  /* Add note modal */
+  .ReactModal__Content {
+    width: calc(100% - 30px) !important;
+    max-width: 500px;
+    padding: 20px !important;
+    margin: 0 !important;
+  }
+
+  .ReactModal__Content textarea {
+    width: 100%;
+    min-height: 150px;
+    resize: vertical;
+  }
+
+  .ReactModal__Content .btn {
+    width: 100%;
+  }
+
+  .btn-back {
+    width: 120px;
+  }
+
+  .ticket-created {
+    padding: 25px 15px;
   }
 
   .ticket-created h2,
   .heading h1 {
-    font-size: 2rem;
-  }
-
-  .heading p {
     font-size: 1.5rem;
   }
 }
